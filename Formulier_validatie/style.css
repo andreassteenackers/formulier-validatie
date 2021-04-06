@@ -1,8 +1,29 @@
 #kollom1{
     float: left;
 }
+#kollom2{
+    float: left;
+}
+
+#kollom3{
+    float: right;
+}
 #Lijn{
-    width: 5000px;
+    width: 700px;
+  }
+#error{
+    background-color:lightpink;
+    width: 300px;
+    color: red;
+}
+
+#geregristreerd{
+    background-color: lightgreen;
+    color: rgb(1, 65, 1);
+}
+#betalingswijze{
+    background-color: lightblue;
+    color: rgb(59, 59, 253);
 }
 button {
     background-color:blue ; 
@@ -14,3 +35,8 @@ button {
     display: inline-block;
     font-size: 16px;    
 }
+
+
+  
+  
+ 
