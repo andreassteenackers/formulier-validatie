@@ -8,135 +8,243 @@
     <title>Formulier validatie - Andreas Steenackers</title>
 </head>
 <body>
-    <h1>Registreer</h1>
-    <p>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
-    
-    <form action="/" method="GET">
+<h1>Registreer</h1> 
+<p>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
+  
+<div class="row">
+  <div class="kollom" >
+    <div id="DivVoornaam">
+        <label for="voornaam">Voornaam</label><br>
+        <input id="voornaam" placeholder="Uw voornaam" name="uw voornaam" type="text">
+    </div> 
 
-        <div id="kollom1">
-            <div id="DivVoornaam">
-                <label for="voornaam">voornaam</label><br>
-                <input id="voornaam" placeholder="Uw voornaam" name="uw voornaam" type="text">
-            </div>  
-            <div id="DivGebruiker">
-                <label for="Gebruikersnaam">Gebruikersnaam</label><br>
-                <input id="Gebruikersnaam" placeholder="u123456" name="Gebruikersnaam" type="text">
-            </div>
-            <div id="DivWachtwoord">
-                <label for="wachtwoord">Wachtwoord</label><br>
-                <input id="wachtwoord" name="wacthwoord" type="text">
-                <p>Je wachtwoord moet minstens 8 tekens bevatten</p>
-            </div>
-            <div id="DivAdres">
-                <label for="adres">Adres</label><br>
-                <input id="adres" name="adres" type="text" size="49" >
-            </div> 
-            <div id="DivLand">
-                <label for="Land">Land</label><br>
-                <select name="Land" id="Land">
-                    <!-- placeholder voor select via de onderstaande website
-                    https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html -->
-                    <option value="" disabled selected hidden>kies een land</option>
-                    <option value="Afghanistan">Afghanistan</option>
-                    <option value="Armenië">Armenië</option>
-                    <option value="Aruba">Aruba</option>
-                    <option value="Australië">Australië</option>
-                    <option value="Bangladesh">Bangladesh</option>
-                    <option value="Barbados">Barbados</option>
-                    <option value="Belarus">Belarus</option>
-                    <option value="België">België</option>
-                    <option value="Costa Rica">Costa Rica</option>
-                    <option value="Cuba">Cuba</option>
-                    <option value="Cyprus">Cyprus</option>
-                    <option value="Denemarken">Denemarken</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="Egypte">Egypte</option>
-                    <option value="El Salvador">El Salvador</option>
-                    <option value="Finland">Finland</option>
-                    <option value="Frankrijk">Frankrijk</option>
+    <div id="DivGebruiker">
+        <label for="gebruikersnaam">Gebruikersnaam</label><br>
+        <input id="gebruikersnaam" placeholder="u123456" name="gebruikersnaam" type="text">
+    </div>
 
-                </select>
-            </div> 
-            <div id="DivProvincie">
-                <label for="provincie">Provincie</label><br>
-                <select name="provincie" id="provincie">
-                    <option value="" disabled selected hidden>kies een provincie</option>
-                    <option value="Antwerpen">Antwerpen</option>
-                    <option value="Limburg">Limburg</option>
-                    <option value="Luik">Luik</option>
-                    <option value="Vlaams-Brabant">Vlaams-Brabant</option>
-                    <option value="Waals-Brabant">Waals-Brabant</option>
-                    <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
-                    <option value="West-Vlaanderen">West-Vlaanderen</option>
-                    <option value="Henegouwen">Henegouwen</option>
-                    <option value='Namen'>Namen</option>
-                    <option value="Luxemburg">Luxemburg</option>
-                </select>
-            </div> 
-            <div id="DivPostcode">
-                <label for="postcode">Postcode</label><br>
-                <input id="postcode" name="postcode" type="text">
+    <div id="DivWachtwoord">
+        <label for="wachtwoord">Wachtwoord</label><br>
+        <input id="wachtwoord" name="wacthwoord" type="text">
+        <p style="opacity: 60%;">Je wachtwoord moet minstens 8 tekens bevatten</p>
+    </div>
+
+    <div id="DivAdres">
+        <label for="adres">Adres</label><br>
+        <input id="adres" name="adres" type="text" size="49" >
+    </div> 
+
+    <div id="DivLand">
+        <label for="land">Land</label><br>
+        <select name="land" id="land">
+            <!-- placeholder voor select via de onderstaande website
+            https://www.w3docs.com/snippets/css/how-to-create-a-placeholder-for-an-html5-select-box-by-using-only-html-and-css.html -->
+            <option value="" disabled selected hidden>kies een land</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Armenië">Armenië</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Australië">Australië</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belarus">Belarus</option>
+            <option value="België">België</option>
+            <option value="Costa Rica">Costa Rica</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Denemarken">Denemarken</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Egypte">Egypte</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Finland">Finland</option>
+            <option value="Frankrijk">Frankrijk</option>
+        </select>
+    </div> 
+
+
+    <div id="DivProvincie">
+        <label for="provincie">Provincie</label><br>
+        <select name="provincie" id="provincie">
+            <option value="" disabled selected hidden>kies een provincie</option>
+            <option value="Antwerpen">Antwerpen</option>
+            <option value="Limburg">Limburg</option>
+            <option value="Luik">Luik</option>
+            <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+            <option value="Waals-Brabant">Waals-Brabant</option>
+            <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+            <option value="West-Vlaanderen">West-Vlaanderen</option>
+            <option value="Henegouwen">Henegouwen</option>
+            <option value='Namen'>Namen</option>
+            <option value="Luxemburg">Luxemburg</option>
+        </select>
+    </div> 
+
+    <div id="DivPostcode">
+        <label for="postcode">Postcode</label><br>
+        <input id="postcode" name="postcode" type="text">
+    </div> 
+  </div>
+
+
+
+  <div class="kollom">
+    <div id="DivNaam">
+        <label for="naam">naam</label><br>
+        <input id="naam" placeholder="Uw naam" name="naam" type="text">
+    </div>
+    <div id="DivEmail">
+        <label for="email">E-mailadres</label><br>
+        <input id="email" placeholder="mail@example.com" name="email" type="text">
+    </div>
+    <div id="DivHerWachtwoord">
+        <label for="herhaalWachtwoord">Herhaal wachtwoord</label><br>
+        <input id="herhaalWachtwoord" name="herhaalWachtwoord" type="text">
+    </div>  
+  </div>
+
+
+
+  <div class="kollom">
+    <div id="error">
+        <h4>Yikes, errors...</h4>
+        <p id=errortext></p>
+    </div>
+    <div id="geregristreerd">
+        <h4>Goed Gedaan!</h4>
+        <p>Aww yeah, je werd geregistreerd.</p>
+    </div>
+    <div id="betalingswijze">
+        <h4 >Betalingswijze</h4>
+        <p id="betalingswijzetext"></p>
+    </div>
+  </div>
+</div>
+
+    <hr style="width: 1000px; margin-right: 1200px; margin-left: -150px;" >
+    <div class="row">
+        <div class="kollom">
+            <div id="HouOpHoogte">
+                <h2>Hou me op de hoogte</h2>
+                <input type="checkbox" id="Nieuwsbrief" name="Nieuwsbrief" value="Nieuwsbrief">
+                <label for="Nieuwsbrief">Inschrijven voor onze nieuwsbrief</label><br>
+                <input type="checkbox" id="voorwaarden" name="voorwaarden" value="voorwaarden">
+                <label for="female">Ik ga akkoord met de algemene voorwaarden</label><br>
             </div> 
         </div>
-
-        <div id="kollom2">
-            <div id="DivNaam">
-                <label for="naam">naam</label><br>
-                <input id="naam" placeholder="Uw naam" name="naam" type="text">
+        <div class="kollom">
+            <div id="Betaling">
+                <h2>Betaling</h2>
+                <input type="radio" id="BankingApp" checked="true" name="betaling" value="BankingApp">
+                <label for="BankingApp">Banking app</label><br>
+                <input type="radio" id="Overschrijving" name="betaling" value="Overschrijving">
+                <label for="Overschrijving">Overschrijving</label><br>
+                <input type="radio" id="VisaCard" name="betaling" value="VisaCard">
+                <label for="VisaCard">Visa Card</label><br>
+                <input type="radio" id="PayPal" name="betaling" value="PayPal">
+                <label for="PayPal">PayPal</label>
             </div>
-            <div id="DivEmail">
-                <label for="email">E-mailadres</label><br>
-                <input id="email" placeholder="mail@example.com" name="email" type="text">
-            </div>
-            <div id="DivHerWachtwoord">
-                <label for="herhaalWachtwoord">Herhaal wachtwoord</label><br>
-                <input id="herhaalWachtwoord" name="herhaalWachtwoord" type="text">
-            </div>   
         </div>
+    </div>
+</div>
 
-        <div id="kollom3">
-            <div id="error">
-                <h4>Yikes, errors...</h4>
-                <p id=errortext></p>
-            </div>
-            <div id="geregristreerd">
-                <h4>Goed Gedaan!</h4>
-                <p>Aww yeah, je werd geregistreerd.</p>
-            </div>
-            <div id="betalingswijze">
-                <h4 >Betalingswijze</h4>
-                <p id="betalingswijzetext"></p>
-            </div>
-        </div> 
+<hr style="width: 1000px; margin-right: 1200px; margin-left: -150px;" >
+<button id="btnValideer" onclick="validateForm()">Wave your magic wand</button>
 
-    
-        <hr id="Lijn" align="left" width="53%">
-        <div id="HouOpHoogte">
-            <h2>Hou me op de hoogte</h2>
-            <input type="radio" id="Nieuwsbrief" name="Nieuwsbrief" value="Nieuwsbrief">
-            <label for="Nieuwsbrief">Inschrijven voor onze nieuwsbrief</label><br>
-            <input type="radio" id="voorwaarden" name="voorwaarden" value="voorwaarden">
-            <label for="female">Ik ga akkoord met de algemene voorwaarden</label><br>
-        </div> 
-        <div id="Betaling">
-            <h2>Betaling</h2>
-            <input type="radio" id="BankingApp" checked="true" name="betaling" value="BankingApp">
-            <label for="BankingApp">Banking app</label><br>
-            <input type="radio" id="Overschrijving" name="betaling" value="Overschrijving">
-            <label for="Overschrijving">Overschrijving</label><br>
-            <input type="radio" id="VisaCard" name="betaling" value="VisaCard">
-            <label for="VisaCard">Visa Card</label><br>
-            <input type="radio" id="PayPal" name="betaling" value="PayPal">
-            <label for="PayPal">PayPal</label>
-        </div>
-        <hr id="Lijn" align="left" width="53%">
-        <button>Wave your magic wand</button>
-    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+crossorigin="anonymous"></script>
+
+<script>
+    // elementen verbergen https://www.w3schools.com/jquery/eff_hide.asp
+    $("#error").hide();
+    $("#geregristreerd").hide();
+    $("#betalingswijze").hide();
+
+    function validateform(){
+        // waardes van input koppelen
+        var voornaam = document.getElementById("voornaam").value;
+        var naam = document.getElementById("naam").value;
+        var gebruiker = document.getElementById("gebruikersnaam").value;
+        var mail = document.getElementById("email").value;
+        var wachtwoord = document.getElementById("wachtwoord").value;
+        var herhaalWachtwoord = document.getElementById("herhaalWachtwoord").value;
+        var adres = document.getElementById("adres").value;
+        var land = document.getElementById("land").value;
+        var provincie = document.getElementById("provincie").value;
+        var zip = document.getElementById("postcode").value;
+        var betalingswijze = document.getElementsByName("betaling");
+        
+        //zorgt er voor dat er geen dubbele errors komen door het leeg maken van het error vak.
+        document.getElementById("error").innerHTMl="";
+
+
+        // array aanmaken voor het opslagen van de errors
+        var errors =[];
+
+        //gebruikt de functie dat controleert op lege velden
+        checkEmptyField(voornaam,"Het veld voornaam is vereist!");
+        checkEmptyField(naam,"Het veld naam is vereist!");
+        checkEmptyField(gebruiker,"Het veld gebruikersnaam is vereist!");
+        checkEmptyField(mail,"Het veld email is vereist!");
+        checkEmptyField(wachtwoord,"Het veld wachtwoord is vereist!");
+        checkEmptyField(herhaalWacthwoord,"Het veld herhaalWachtwoord is vereist!");
+        checkEmptyField(adres,"Het veld adres is vereist!");
+        checkEmptyField(land,"Het veld land is vereist!");
+        checkEmptyField(provincie,"Het veld provincie is vereist!");
+        checkEmptyField(zip,"Het veld postcode is vereist!");
+
+
+        //gebruikt funcite om email te valideren
+        validateEmail(mail);
+
+
         
 
 
+        //controleren op lege velden -> https://www.w3schools.com/howto/howto_js_validation_empty_input.asp
+        function checkEmptyField(veld,melding){
+            if(veld == "" || veld == null ){
+                errors.push(melding);
+            }
+        }
+        
 
-    
+        //email controleren
+        function validateEmail(mail){
+            if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)){
+                return true;
+            }else
+            {
+                errors.push("E-mailadres is niet correct!")
+            }
+        }
+
+        //alerts laten zien en verbergen
+        function toonAlerts(){
+            if(errors.lenghts>0){
+                $("#error").show();
+                $("#geregristreerd").hide();
+                $("#betalingswijze").hide();
+
+                //na elke error begint de volgende error op een volgende lijn 
+                for (i=0;i<errors.length; i++){
+                    document.getElementById("errors").innerHTMl += errors[i] + "<br>"
+                }
+            }
+            else{
+                $("#error").hide();
+                $("#geregristreerd").show();
+                $("#betalingswijze").show();
+            }
+        }
+
+    }
+
+
+
+</script>
+
 
 </body>
+
 </html>

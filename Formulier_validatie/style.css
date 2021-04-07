@@ -1,15 +1,17 @@
-#kollom1{
+* {
+    box-sizing: border-box;
+  }
+.kollom {
     float: left;
-}
-#kollom2{
-    float: left;
-}
+    width: 33.33%;
+    padding: 10px;
+  }
+  
 
-#kollom3{
-    float: right;
-}
-#Lijn{
-    width: 700px;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 #error{
     background-color:lightpink;
@@ -19,10 +21,12 @@
 
 #geregristreerd{
     background-color: lightgreen;
+    width: 300px;
     color: rgb(1, 65, 1);
 }
 #betalingswijze{
     background-color: lightblue;
+    width: 300px;
     color: rgb(59, 59, 253);
 }
 button {
@@ -33,9 +37,9 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;    
+    font-size: 16px;  
+    margin-left: 325px;
 }
-
 
   
   
