@@ -175,7 +175,7 @@ crossorigin="anonymous"></script>
         var betalingswijze = document.getElementsByName("betaling");
         
         //zorgt er voor dat er geen dubbele errors komen door het leeg maken van het error vak.
-        document.getElementById("error").innerHTML="";
+        document.getElementById("errortext").innerHTML="";
 
 
         // array aanmaken voor het opslagen van de errors
@@ -284,7 +284,7 @@ crossorigin="anonymous"></script>
 
                 //na elke error begint de volgende error op een volgende lijn 
                 for (i=0;i<errors.length; i++){
-                    document.getElementById("error").innerHTML += errors[i] + "<br/>";
+                    document.getElementById("errortext").innerHTML += errors[i] + "<br/>";
                 }
             }
             else{
